@@ -1,11 +1,73 @@
 <!doctype html>
-<html lang="en">
+<html lang="th">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>ข้อมูลส่วนตัวนักศึกษา</title>
+    <style>
+      /* เพิ่ม CSS เพื่อความสวยงาม */
+      body {
+        background-color: #f8f9fa;
+      }
+      .student-profile .card {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .student-profile .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        max-height: 400px;
+        object-fit: cover;
+      }
+      .student-profile h1 {
+        color: #343a40;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <div class="container mt-5 mb-5 student-profile">
+      <h1 class="text-center mb-4">ข้อมูลส่วนตัวนักศึกษา 🧑‍🎓</h1>
+      <div class="card p-4">
+        <div class="row g-0">
+          <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/300" class="img-fluid rounded-start" alt="รูปนักศึกษา">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <dl class="row">
+                <dt class="col-sm-3">รหัสนักศึกษา:</dt>
+                <dd class="col-sm-9">67xxxxxxxx</dd>
+
+                <dt class="col-sm-3">ชื่อ-นามสกุล:</dt>
+                <dd class="col-sm-9">นายใจดี เรียนเก่ง</dd>
+
+                <dt class="col-sm-3">ชื่อเล่น:</dt>
+                <dd class="col-sm-9">ดีดี้</dd>
+
+                <hr class="my-3">
+
+                <dt class="col-sm-3">ชั้นปี:</dt>
+                <dd class="col-sm-9">3</dd>
+
+                <dt class="col-sm-3">หมู่เรียน:</dt>
+                <dd class="col-sm-9">01</dd>
+
+                <dt class="col-sm-3">คณะ:</dt>
+                <dd class="col-sm-9">วิทยาศาสตร์และเทคโนโลยี</dd>
+
+                <dt class="col-sm-3">สาขาวิชา:</dt>
+                <dd class="col-sm-9">วิทยาการคอมพิวเตอร์</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
